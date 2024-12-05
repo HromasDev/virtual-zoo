@@ -10,6 +10,12 @@
     <div class="container mt-5">
         <h1 class="mb-4">Список всех клеток</h1>
 
+        @if(session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+        @endif
+
         <table class="table table-bordered">
             <thead>
                 <tr>
